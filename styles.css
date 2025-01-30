@@ -1,0 +1,54 @@
+body {
+    background-color: #FFC0CB; /* Light pink background */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #ff1493; /* Dark pink */
+}
+
+p {
+    color: #ff69b4;
+    font-size: 18px;
+}
+
+/* Flower styling */
+.flower {
+    position: relative;
+    width: 200px;
+    height: 600px;
+    margin: 80px auto;
+}
+
+.petal {
+    position: absolute;
+    width: 50px;
+    height: 180px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 2s ease-in-out;
+}
+
+.petal1 { top: 0; left: 25px; }
+.petal2 { top: 25px; left: 50px; transform: rotate(90deg); }
+.petal3 { top: 50px; left: 25px; transform: rotate(180deg); }
+.petal4 { top: 25px; left: 0px; transform: rotate(270deg); }
+
+.center {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+    top: 35px;
+    left: 35px;
+    opacity: 0;
+}
+
